@@ -1,0 +1,57 @@
+.hero-splodge {
+  width: 70%;
+  position: relative;
+
+}
+
+.splodge-heading {
+  height: 150px;
+  width: 100%;
+  h1 {
+    font-size: 1.2rem;
+    line-height: 1.2rem;
+    font-family: $primary-font-bold;
+    color: $secondary;
+  }
+
+  h2 {
+    font-size: 1rem;
+    font-weight: 500;
+    font-family: $primary-font;
+    color: $secondary;
+    line-height: 1rem;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .splodge-heading {
+    height: 250px;
+    line-height: 1;
+    width: 70%;
+    margin-left: 15%;
+    h1 {
+      font-size: 1.9rem;
+      line-height: 1.9rem;
+    }
+
+    h2 {
+      font-size: 1.3rem;
+      line-height: 1.3rem;
+    }
+  }
+
+}
+
+.splodge {
+  position: absolute;
+  bottom: 0;
+  left: -28%;
+  width: 150%;
+  height: 120%;
+  border-radius: 0;
+  border-bottom-left-radius: 5rem;
+  border-bottom-right-radius: 7rem;
+  border-top-left-radius: 1.5rem;
+  transform: skew(5deg, 5deg) rotate(343deg);
+  z-index: -1;
+}

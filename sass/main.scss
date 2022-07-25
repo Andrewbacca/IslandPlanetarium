@@ -1,0 +1,82 @@
+// Variables
+@import "variables";
+
+// Bootstrap 5
+@import "node_modules/bootstrap/scss/bootstrap";
+
+@font-face {
+  font-family: 'Bariol Regular';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Bariol Regular'), url('../assets/fonts/bariol_regular-webfont.woff') format('woff');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Bariol Bold';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Bariol Bold'), url('../assets/fonts/bariol_bold-webfont.woff') format('woff');
+  font-display: swap;
+}
+
+
+body {
+  font-family: $primary-font;
+  font-weight: 300;
+  font-style: normal;
+  color: $white;
+  background: $bg-primary;
+  background: linear-gradient(45deg, $bg-primary 0%, $bg-secondary 100%) fixed;
+}
+
+h1, h2, h3 {
+  font-family: $primary-font;
+  font-weight: 600;
+  font-style: normal;
+  color: $primary;
+}
+
+h1.white, h2.white, h3.white {
+  color: $white;
+}
+
+h1.white span.bold, h2.white span.bold, h3.white span.bold {
+  font-family: $primary-font-bold;
+  font-weight: bold;
+}
+
+.admin-bar header {
+  top: 32px;
+}
+
+header {
+  background: $bg-primary;
+  background: linear-gradient(90deg, $bg-primary 0%, $bg-secondary 100%);
+  position: fixed;
+  width: 100%;
+  z-index: 10000;
+  top: 0;
+}
+
+.main-content {
+  margin-top: 121px;
+}
+
+.default-gradient {
+  background: $bg-primary;
+  background: linear-gradient(90deg, $bg-primary 0%, $bg-secondary 100%);
+}
+
+.white-gradient {
+  background: rgb(255, 255, 255);
+  background: linear-gradient(90deg, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 100%);
+}
+
+@import "navbar";
+@import "hero";
+@import "splodge";
+@import "transformers";
+@import "content";
+@import "footer";
+@import "trust-pilot";

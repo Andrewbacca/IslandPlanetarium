@@ -1,0 +1,60 @@
+.trust-pilot {
+  position: relative;
+}
+.trust-pilot-bubble {
+  margin: 0 auto;
+  max-width:207px;
+  border-radius:30px;
+  background-color:#FFF;
+  animation: float 4s ease-in-out infinite;
+  border: 2px solid #00B77A;
+  -webkit-box-shadow: -8px 8px 0px 0px rgba(0,183,122,1);
+  -moz-box-shadow: -8px 8px 0px 0px rgba(0,183,122,1);
+  box-shadow: -8px 8px 0px 0px rgba(0,183,122,1);
+  padding:20px;
+}
+.trust-pilot-bubble span {
+  text-align: center;
+  color: #000;
+  font-size: 1.6rem;
+  line-height: 1.2;
+  display: block;
+}
+.trust-pilot-bubble-arrow {
+  border-left: 32px solid transparent;
+  border-top: 32px solid #00B77A;
+  bottom: -33px;
+  position: absolute;
+  right: 30px;
+}
+.trust-pilot-bubble-arrow::after {
+  border-left: 21px solid transparent;
+  border-top: 21px solid #FFF;
+  bottom: 16px;
+  content: "";
+  position: absolute;
+  right: 6px;
+}
+
+@keyframes float {
+  0% {
+    transform: translatey(0px) rotate(4deg);
+  }
+  50% {
+    transform: translatey(-15px) rotate(4deg);
+  }
+  100% {
+    transform: translatey(0px) rotate(4deg);
+  }
+}
+@media (min-width: 768px) {
+  .trust-pilot-bubble {
+    top: calc(-100% + -1rem);
+    position: absolute;
+  }
+}
+@media only screen and (min-width : 1200px) {
+  .trust-pilot-bubble {
+    position: absolute;
+  }
+}

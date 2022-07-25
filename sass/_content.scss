@@ -1,0 +1,141 @@
+// Dark Content
+.content-wrapper-dark {
+  background-image: url('../assets/images/bg-dark.png') !important;
+  background-size: 100%;
+  margin-top: -100px;
+}
+.content-inner-dark {
+  padding-bottom: 150px;
+  padding-top: 110px;
+  font-weight: 400 !important;
+  h1, h2, h3, h4 {
+    color: $white;
+  }
+  h3, h4 {
+    font-family: $primary-font;
+    font-weight: 400 !important;
+    strong, a{
+      font-family: $primary-font-bold;
+      font-weight: 600;
+      text-decoration: none;
+    }
+  }
+
+  p{
+    font-size:16px;
+    strong, a {
+      font-family: $primary-font-bold;
+      font-weight: 600;
+    }
+  }
+}
+
+
+.content-wrapper-dark {
+  .bg-pos-1 {
+    background-position: 40px -70px
+  }
+
+  .bg-pos-2 {
+    background-position: -80px 70px
+  }
+}
+
+@media (min-width: 768px) {
+
+}
+
+@media only screen and (min-width: 1200px) {
+  .content-wrapper-dark {
+    margin-top: -150px;
+  }
+}
+
+// Light Content
+.content-wrapper-light {
+  background: #ffffff;
+  //background-image: url('../assets/images/white-background.png') !important;
+  //background-size: 100%;
+  color: $primary;
+}
+
+.content-inner-light {
+  background: #ffffff;
+  //margin-bottom: -100px;
+  //z-index: 100;
+  //position: relative;
+
+  h1, h2, h3, h4 {
+    color: $secondary;
+  }
+  h3, h4 {
+    font-family: $primary-font;
+    font-weight: 400;
+    strong, a{
+      font-family: $primary-font-bold;
+      font-weight: 600;
+      text-decoration: none;
+    }
+  }
+
+  p{
+    font-size:16px;
+    strong, a {
+      font-family: $primary-font-bold;
+      font-weight: 600;
+    }
+  }
+}
+
+
+.content-wrapper-light.light-top {
+  background-position: 40px -70px
+}
+
+// Content curves
+.content-spacer-wrapper {
+  position: relative;
+  margin-top: -1px;
+}
+
+.content-spacer {
+  width: 100%;
+  height: 175px;
+  background: #fff;
+  -webkit-mask-image: url(../assets/images/bottom-curvee.svg);
+  -webkit-mask-size: 100%;
+  mask-image: url(../assets/images/bottom-curvee.svg);
+  -webkit-mask-position: left bottom;
+  mask-position: center;
+  mask-size: 100%;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  margin-top: -110px;
+  position: absolute;
+  bottom: 0;
+}
+
+.content-spacer-secondary {
+  width: 100%;
+  height: 260px;
+  background: #ffffff;
+  -webkit-mask-image: url(../assets/images/curve.svg);
+  -webkit-mask-size: 100%;
+  mask-image: url(../assets/images/curve.svg);
+  -webkit-mask-position: left top;
+  mask-position: center;
+  mask-size: 100%;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  top: 0;
+}
+
+@media screen and (min-width: 1920px) {
+  .content-spacer-secondary {
+    height: 320px;
+  }
+
+  .content-spacer {
+    height: 220px;
+  }
+}

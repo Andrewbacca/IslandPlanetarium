@@ -1,0 +1,27 @@
+.navbar-white-text, .navbar-white-text li a {
+  color: #ffffff;
+  font-family: $primary-font-bold;
+  font-size: 20.4px;
+}
+
+.navbar-white-text li a:hover {
+  color: #ffffff;
+  font-family: $primary-font-bold;
+}
+
+.wfb_navbar {
+  height: 124px;
+  z-index: 11;
+}
+
+.menu-item {
+  margin-right: 30px;
+}
+
+.nav-divider {
+  -webkit-box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  position: relative;
+  z-index: 10;
+}

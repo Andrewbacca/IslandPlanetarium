@@ -1,0 +1,43 @@
+.page-heading {
+  overflow: hidden;
+  position: relative;
+}
+
+.header-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+}
+
+.header-background-container {
+  background-size: cover;
+  background-position: top;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  z-index: 0;
+  margin-top: -4%;
+  height: 400px;
+}
+
+@media (min-width: 768px) {
+  .header-background-container {
+    height: 550px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .header-background-container {
+    height: 850px;
+  }
+}
+.page-heading .image-overlay {
+  width: 38%;
+  position: absolute;
+  bottom: 20px;
+  right: 0;
+  z-index: 11;
+  /* padding-right: 2%; */
+}

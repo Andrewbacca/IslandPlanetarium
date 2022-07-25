@@ -1,0 +1,13 @@
+.skew-rounded {
+  margin-top: -4%;
+  clip-path: inset(0 0 10% 0 round 0 0 10% 10%);
+}
+
+.skew {
+  transform: skewY(-4deg);
+}
+
+.anti-skew {
+  margin-top: 3%;
+  transform: skewY(4deg);
+}
